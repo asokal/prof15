@@ -1,0 +1,4 @@
+mixin catalogItem(size, type, title)
+	a(href='#' class=`catalog-item catalog-item--${size} catalog-item--${type}`)
+		.catalog-item__title
+			| #{title}

@@ -1,0 +1,13 @@
+extends layouts/default.pug
+include ./mixins/tabs.pug
+include ./mixins/tab.pug
+
+block content
+	section.cabinet
+		.container
+			h1 Личный кабинет
+			+tabs(['Личные данные', 'История заказов', 'Избранные товары', 'Выход'])
+				+tab('active')
+					include ./components/cabinet-form.pug
+				+tab()
+					include ./components/cabinet-order.pug

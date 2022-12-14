@@ -1,0 +1,19 @@
+.product-slider.slick-slider
+{
+	margin: 0 -9px;
+
+	.slick-prev, .slick-next
+	{
+		top: 112px;
+	}
+
+	.slick-prev
+	{
+		left: -44px;
+	}
+
+	.slick-next
+	{
+		right: -39px;
+	}
+}

@@ -1,0 +1,8 @@
+mixin textBlock(title, descr)
+	.textblock
+		h2.textblock__title= title
+		p.textblock__descr
+			if block
+				block
+			else
+				p.textblock__descr= descr

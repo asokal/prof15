@@ -1,0 +1,8 @@
+mixin reviewPerson(img, name, product)
+	.review-person
+		.review-person__img
+			img(src=`./img/${img}`, alt="")
+		div
+			.review-person__name= name
+
+			.review-person__product= product

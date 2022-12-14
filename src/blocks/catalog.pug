@@ -1,0 +1,17 @@
+include ../mixins/catalog-item.pug
+section.catalog
+	.container
+		+textBlock('Каталог')
+			| Мы предлагаем Вашему вниманию продукцию известных марок, отлично зарекомендовавшие
+			br
+			| себя среди профессионалов и подходящие для ежедневного домашнего использования.
+
+		.row
+			.catalog__left
+				+catalogItem('md', 'makeup', 'Макияж')
+				+catalogItem('md', 'men-and-hair', 'Для мужчин')
+
+			.catalog__right
+				+catalogItem('sm', 'skin', 'Уход за кожей')
+				+catalogItem('sm', 'men-and-hair', 'Уход за волосами')
+				+catalogItem('lg', 'accessories', 'Аксессуары')

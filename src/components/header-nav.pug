@@ -1,0 +1,75 @@
+nav.header-nav._headerNav
+	.container
+		.header-nav__left
+			a(href="#").header-nav__logo
+				img(src="./img/logo.png", alt="")
+
+			ul.header-nav__list
+				li
+					a(href="#") Главная
+					hr
+				li.active.expand
+					a(href="#") Каталог
+					span.expand__icon
+						include ../../img/ic_arrow-down.svg
+					hr
+					.catalog-dropdown
+						.catalog-tabs
+							ul.catalog-tabs__list
+								li(class="active" onclick="o2.changeTab(this);")
+									span
+										| Макияж
+								li(onclick="o2.changeTab(this);")
+									span
+										| Уход за кожей
+
+							div(class="catalog-tab _tab active")
+								.catalog-tab-item
+									.catalog-tab-item__title
+										| Для лица
+
+									ul.catalog-tab-item__list
+										li Основа для макияжа
+
+								- for (var x = 0; x < 2; x++)
+									.catalog-tab-item
+										.catalog-tab-item__title
+											| Тональные средства
+
+										ul.catalog-tab-item__list
+											li Корректирующие средства
+											li Пудра
+											li Румяна
+											li Хайлайтеры
+											li Матирующие средства
+											li BB & CC средства
+
+
+							div(class="catalog-tab _tab")
+								| lol
+				li
+					a(href="#") Статьи
+					hr
+				li
+					a(href="#") О компании
+					hr
+
+		.header-nav__right
+			.header-nav-number
+				a(href="tel:+1234567890") +7(8672) 54-12-68
+
+			.header-nav-search
+				.header-nav-search__icon
+					include ../../img/ic_search.svg
+				input.header-nav-search__input(type="text" placeholder="Поиск...")
+
+			.header-nav-cart
+				.header-nav-cart__icon
+					include ../../img/ic_cart.svg
+
+				span.header-nav-cart__quantity 4
+
+			a(href="#" class="header-nav-lk")
+				.header-nav-lk__icon
+					include ../../img/ic_avatar.svg
+				span Личный кабинет

@@ -1,0 +1,34 @@
+extends layouts/default.pug
+
+block content
+	section.delivery
+		.container
+			h1 Доставка и оплата
+			.delivery__box
+				include ./../img/courier.svg
+				.delivery__text-block
+					.delivery__title Курьером по городу
+					.delivery__order-group Cрок:&nbsp;
+						span.delivery__value 1-2 дня
+
+					.delivery__order-group При заказе от 1 500₽&nbsp;-&nbsp;
+						span.delivery__value бесплатно
+
+					.delivery__order-group При заказе меньше 1 500₽&nbsp;-&nbsp;
+						span.delivery__value 220₽
+
+			.delivery__box
+				include ./../img/box.svg
+				.delivery__text-block
+					.delivery__title Почтой России
+
+					.delivery__text Товар передается в доставку в течение 1-2 дней с момента оформления и 100% предоплаты заказа, так как доставки с наложенным платежом у нас нет. Доставка до отделения почты РФ, по индексу, ближайшему к адресу доставки.
+
+					.delivery__order-group Cрок:&nbsp;
+						span.delivery__value от 5-20 дней
+
+					.delivery__order-group При заказе до 3 500₽&nbsp;-&nbsp;
+						span.delivery__value стоимость доставки рассчитывается в корзине индивидуально
+
+					.delivery__order-group При заказе от 3 500₽&nbsp;-&nbsp;
+						span.delivery__value предоставляется скидка на стоимость доставки в размере 300₽

@@ -1,0 +1,10 @@
+mixin tabs(list)
+	.tabs
+		ul.tabs__list
+			each item,index in list
+				if index==0
+					li.active(onclick="o2.changeTab(this);")= item
+				else
+					li(onclick="o2.changeTab(this);")= item
+
+		block

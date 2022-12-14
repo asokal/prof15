@@ -1,0 +1,38 @@
+.cabinet-form
+	.cabinet-form__title Личные данные
+	.cabinet-form__form-group
+		label.g-label
+			span.g-label__name Имя
+			input.g-input(type='text' name='persname' id='persname' placeholder='Введите ваше имя')
+
+		label.g-label
+			span.g-label__name Фамилия
+			input.g-input(type='text' name='perssurname' id='persfam' placeholder='Введите вашу фамилию')
+
+		label.g-label
+			span.g-label__name Телефон
+			input.g-input(type='tel' name='perstel' id='perstel' placeholder='Введите ваш телефон')
+
+		label.g-label
+			span.g-label__name Email
+			input.g-input(type='email' name='persmail' id='persmail' placeholder='Введите ваш email')
+
+		button.g-btn-grey-light.cabinet-form__btn
+			| Сохранить
+
+	.cabinet-form__title Смена пароля
+	.cabinet-form__form-group
+		label.g-label
+			span.g-label__name Старый пароль
+			input.g-input(type='password' name='oldpass' id='old' placeholder='Введите старый пароль')
+
+		label.g-label
+			span.g-label__name Новый пароль
+			input.g-input(type='password' name='newpass' id='newpass' placeholder='Введите новый пароль')
+
+		label.g-label
+			span.g-label__name Подтвердите новый пароль
+			input.g-input(type='password' name='reppass' id='reppass' placeholder='Введите новый пароль')
+
+		button.g-btn-grey-light.cabinet-form__btn
+			| Сохранить

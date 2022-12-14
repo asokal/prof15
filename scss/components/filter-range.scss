@@ -1,0 +1,107 @@
+.filter-range__wrapper
+{
+	padding: 0 8px;
+	margin-bottom: 20px;
+}
+
+.filter-range__values
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 9px;
+	line-height: 12px;
+	color: $cGreyLight;
+	margin: 0 -8px;
+}
+
+.filter-range
+{
+	margin-bottom: 10px;
+
+	&.noUi-target
+	{
+		background: #EFEDF1;
+		border: none;
+		box-shadow: none;
+	}
+
+	&.noUi-horizontal
+	{
+		height: 2px;
+
+		.noUi-handle
+		{
+			right: -8px !important;
+			top: -7px;
+		}
+
+		.noUi-tooltip
+		{
+			background-color: #EFEDF1;
+			border-radius: 2px;
+			font-size: 9px;
+			line-height: 20px;
+			color: #677387;
+			height: 20px;
+			text-align: center;
+			padding: 0 5px;
+			border: 0;
+			bottom: -29px;
+
+			&:before
+			{
+				display: block;
+				content: '';
+				position: absolute;
+				top: -5px;
+				margin-left: -5px;
+				left: 50%;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 5px solid rgba(103, 115, 135, 0.1);
+			}
+		}
+	}
+
+	.noUi-handle
+	{
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: 2px solid #FBD0DE;
+		box-shadow: none;
+		cursor: pointer;
+
+		&:before, &:after
+		{
+			display: none;
+		}
+	}
+
+	.noUi-base
+	{
+		height: 2px;
+		cursor: pointer;
+
+		.noUi-connect
+		{
+			background: $cGrey;
+		}
+	}
+
+
+	.select-nights-range__slider
+	{
+		margin-top: 12px;
+		margin-bottom: 10px;
+	}
+
+	.noUi-tooltip
+	{
+		display: none;
+	}
+	.noUi-active .noUi-tooltip
+	{
+		display: block;
+	}
+}

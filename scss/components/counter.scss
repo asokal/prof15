@@ -1,0 +1,20 @@
+.counter{display:flex;}
+.counter__button
+{
+	width: 31px;
+	height: 31px;
+	background: #F7F6F8;
+	border-radius: 2px;
+	border:0px;
+	transition: .2s;
+	&:hover{background: #EFEDF1;}
+}
+.counter__count
+{
+	width:40px;
+	text-align: center;
+	line-height: 31px;
+	@include fMain(600);
+	font-size: 16px;
+	color: $cBlackLight;
+}

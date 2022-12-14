@@ -1,0 +1,17 @@
+.subscribe
+{
+	padding: 100px 0;
+
+	.textblock
+	{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.subscribe
+	{
+		padding: 40px 0;
+	}
+}

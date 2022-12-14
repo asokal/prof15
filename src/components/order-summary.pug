@@ -1,0 +1,22 @@
+.order-summary
+	.order-summary__pricelist
+		.order-summary__price
+			span Общий вес
+			span 1,5 кг
+		.order-summary__price
+			span Товаров на
+			span 1 380 ₽
+		.order-summary__price
+			span Доставка
+			span 1 380 ₽
+		.order-summary__price
+			span Итого
+			span 2 380 ₽
+		.order-summary__mid
+			include ../ui/checkbox.pug
+			label(for='policycheck')
+				| Согласен с обработкой персональных данных в соответсвии с &nbsp;
+				a(href='#') политикой конфидециальности
+	button(class='order-summary__btn')
+		| Оформить заказ
+	a.order-summary__back(href='#') Вернуться в корзину

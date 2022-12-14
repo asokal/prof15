@@ -1,0 +1,86 @@
+.product-card
+	.product-card__left
+		.product-card-gallery
+			.product-card-gallery__photo._tab
+				img(src="./img/product-placeholder2.png", alt="")
+
+			.product-card-gallery__photo._tab.active
+				img(src="./img/product-placeholder.png", alt="")
+
+			.product-card-gallery__photo._tab
+				img(src="./img/product-placeholder2.png", alt="")
+
+			ul.product-card-gallery__thumbs
+				li(onclick="o2.changeTab(this);")
+					img(src="./img/product-placeholder2.png", alt="")
+
+				li.active(onclick="o2.changeTab(this);")
+					img(src="./img/product-placeholder.png", alt="")
+
+				li(onclick="o2.changeTab(this);")
+					img(src="./img/product-placeholder2.png", alt="")
+
+	.product-card__right
+		.product-card__title Blond кондиционер для осветленных волос 250 мл
+
+		ul.product-card__controls
+			li.product-card__control
+				include ../../img/ic_heart.svg
+				| В избранное
+			li.product-card__control
+				include ../../img/ic_network.svg
+				| Поделиться
+
+			li
+				| Код товара: 34568315
+		.row
+			.product-card-chars
+				.product-card__title.product-card__title--minor Характеристики
+
+				.product-card-char
+					.product-card-char__key
+						| Вес,г
+					.product-card-char__value
+						| 13,8  13,8
+
+				.product-card-char
+					.product-card-char__key
+						| Тип
+					.product-card-char__value
+						| Набор декоративной косметики
+
+				.product-card-char
+					.product-card-char__key
+						| Серия
+					.product-card-char__value
+						| NB-08
+
+				.product-card-char
+					.product-card-char__key
+						| Тип кожи
+					.product-card-char__value
+						| Для всех типов кожи
+
+				.product-card-char
+					.product-card-char__key
+						| Текстура
+					.product-card-char__value
+						| Твердая
+
+				.product-card__title.product-card__title--minor О товаре
+				.product-card-chars__descr
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero commodi, placeat provident ullam perferendis numquam sapiente eligendi aliquid, possimus perspiciatis asperiores voluptas, cupiditate hic corrupti natus accusantium nam blanditiis in.
+
+				a.product-card-chars__show-full Читать дальше
+
+			.product-card-buy
+				.product-card-buy__inner
+					.product-card-buy__price 1 380 ₽
+					.product-card-buy__availability
+						include ../../img/ic_checked-yellow.svg
+						span В наличии
+
+					.product-card-buy__descr
+						| Срок доставки уточним при оформлении заказа
+
+				button.product-card-buy__button Купить

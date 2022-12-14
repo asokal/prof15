@@ -1,0 +1,17 @@
+.tab
+{
+	display: none;
+
+	&.active
+	{
+		display: block;
+	}
+}
+
+@media (max-width: 1279px)
+{
+	.tab
+	{
+		width:100%;
+	}
+}

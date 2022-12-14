@@ -1,0 +1,30 @@
+.order
+{
+	margin-top:30px;
+	h1
+	{
+		@include fMain(bold);
+		font-size: 24px;
+		line-height: 33px;
+		color: $cBlack;
+	}
+}
+.order__wrap
+{
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+@media (max-width: 991px)
+{
+	.order__wrap
+	{
+		display: flex;
+		width: 100%;
+		margin-top: 20px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}

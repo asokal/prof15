@@ -1,0 +1,93 @@
+.product-item
+{
+	@include fMain(600);
+	display: flex;
+	flex-direction: column;
+	&__product-personal
+	{
+		width: 290px;
+	}
+}
+
+.product-item__img
+{
+	display: block;
+	width: 100%;
+	height: 228px;
+	border: 1px solid #DEDCE3;
+	border-radius: 2px;
+	margin-bottom: 10px;
+
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.product-item__specs
+{
+	display: flex;
+	flex-grow: 1;
+}
+
+.product-item__title
+{
+	color: $cGreyLight;
+	font-size: 14px;
+	margin-bottom: 3px;
+	transition: color .135s, border-color .135s;
+	border-bottom: 1px solid transparent;
+
+	&:hover
+	{
+		color: $cBlack;
+		border-color: $cBlack;
+	}
+}
+
+.product-item__descr
+{
+	font-size: 15px;
+	color: $cBlack;
+	margin-bottom: 5px;
+}
+
+.product-item__price
+{
+	@include fMain(bold);
+	font-size: 22px;
+	color: $cBlack;
+	margin-top: auto;
+}
+
+.product-item__left
+{
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.product-item__buy
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $cGrey;
+	transition: border-color .2s, background-color .2s;
+	flex-shrink: 0;
+	margin-left: 48px;
+	margin-top: 15px;
+
+	&:hover
+	{
+		border-color: $cYellow;
+		background-color: $cYellowDark;
+	}
+}

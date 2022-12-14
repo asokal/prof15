@@ -1,0 +1,35 @@
+.about
+{
+	margin-top: 30px;
+
+	h1
+	{
+		@include fMain(bold);
+		font-size: 24px;
+		line-height: 33px;
+		color: $cBlack;
+	}
+
+	p
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	ul
+	{
+		@include fMain(bold);
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	li
+	{
+		font-size: 16px;
+		line-height: 26px;
+		font-style: normal;
+		font-weight: normal;
+	}
+}

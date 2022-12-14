@@ -1,0 +1,49 @@
+.auth
+	form._tab.active
+		.auth__title Регистрация
+		label.g-label.error
+			span.g-label__name Фио
+			input.g-input(type='text' name='fullname' id='fullname' placeholder='Введите ФИО')
+			span.g-input__sub._error-msg заполните поле
+
+		label.g-label.error
+			span.g-label__name Email
+			input.g-input(type='email' name='auth-email' id='auth-email' placeholder='Введите email')
+			span.g-input__sub._error-msg заполните поле
+
+		label.g-label.error
+			span.g-label__name Пароль
+			input.g-input(type='password' name='auth__pass' id='auth__pass' placeholder='Введите пароль')
+			span.g-input__sub._error-msg заполните поле
+
+		label.g-label.error
+			span.g-label__name Подтверждение пароля
+			input.g-input(type='password' name='auth-repass' id='auth-repass' placeholder='Введите ФИО')
+			span.g-input__sub._error-msg заполните поле
+
+		button(class='auth__btn')
+			| Отправить
+
+
+	form._tab
+		.auth__title Вход
+		label.g-label.error
+			span.g-label__name Email
+			input.g-input(type='email' name='auth-email2' id='auth-email2' placeholder='Введите email')
+			span.g-input__sub._error-msg заполните поле
+
+		label.g-label.error
+			span.g-label__name Пароль
+			input.g-input(type='password' name='auth__pass2' id='auth__pass2' placeholder='Введите пароль')
+			span.g-input__sub._error-msg заполните поле
+
+		button(class='auth__btn')
+			| Войти
+
+	ul.auth__list
+		li.active(onclick="o2.changeTab(this);")
+			| Уже есть аккаунт
+		li(onclick="o2.changeTab(this);")
+			| Регистрация
+
+	a(href='#') Восстановить пароль?

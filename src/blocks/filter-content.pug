@@ -1,0 +1,23 @@
+.filter-content
+	.container
+		.filter-content__toggle-wrap
+			h1.filter-content__title
+				| Уход за волосами
+			button.g-btn-grey(onclick="o2.toggleFilter(this);")
+				| Фильтровать результаты
+		p.filter-content__descr
+			| Мы гарантируем качество и оригинальное происхождение представленной на сайте продукции.
+			br
+			| Ни один из препаратов не является просроченным или поддельным.
+
+		.row
+			.filter-content__left
+				include ../components/filter.pug
+
+			.filter-content__right
+				.row
+					- for (var x = 0; x < 12; x++)
+						include ../components/product-item.pug
+
+					.filter-content__show-more
+						button.g-btn-transparent Показать еще

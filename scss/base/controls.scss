@@ -1,0 +1,159 @@
+// sliders
+.slick-slider
+{
+	.slick-slide
+	{
+		height: auto;
+	}
+
+	.slick-prev, .slick-next
+	{
+		&:before
+		{
+			display: none;
+		}
+
+		svg circle
+		{
+			transition: .2s;
+		}
+
+		&:hover
+		{
+			svg circle
+			{
+				fill: $cYellowDark;
+			}
+		}
+	}
+}
+
+// buttons
+.g-btn-transparent
+{
+	width: 275px;
+	border: 1px solid #EFEDF1;
+	border-radius: 2px;
+	height: 60px;
+	@include fMain(bold);
+	color: $cGreyLight;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	transition: .135s;
+
+	&:hover
+	{
+		border-color: $cGreyLight;
+		color: $cGrey;
+	}
+}
+
+.g-btn-grey
+{
+	width: 275px;
+	border: 0;
+	border-radius: 2px;
+	height: 60px;
+	@include fMain(bold);
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	transition: .135s;
+	background-color: $cGreyLight;
+
+	&:hover
+	{
+		background-color: $cBlackLight;
+	}
+}
+
+.g-btn--active
+{
+	background: $cBlackLight;
+}
+
+.g-btn-grey-light
+{
+	width: 140px;
+	height: 40px;
+	background-color: #EFEDF1;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.11);
+	border-radius: 2px;
+	@include fMain(600);
+	font-size: 14px;
+	line-height: 19px;
+	color: $cBlackLight;
+	border: 0;
+	transition: .2s;
+
+	&:hover
+	{
+		background-color: #eae8ec;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.g-label
+{
+	margin-bottom: 20px;
+	display: block;
+
+	&.error
+	{
+		._error-msg
+		{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.g-label__name
+{
+	display: block;
+	@include fMain(600);
+	color: $cBlackLight;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.g-input
+{
+	height: 40px;
+	border-radius: 2px;
+	border: 1px solid #DEDCE3;
+	font-size: 15px;
+	line-height: 20px;
+	color: $cBlackLight;
+	padding: 10px;
+	width: 100%;
+	transition: .2s;
+
+	&:focus
+	{
+		border-color: $cGreyLight;
+	}
+
+	&::placeholder
+	{
+		color: $cGreyLight;
+	}
+}
+
+.g-input__sub
+{
+	display: block;
+	font-size: 12px;
+	line-height: 1;
+	margin-top: 4px;
+}
+
+._error-msg
+{
+	color: $cRed;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2 ease-out;
+}

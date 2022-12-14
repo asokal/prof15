@@ -1,0 +1,5 @@
+mixin header(modifier)
+	- modifier = modifier || ''
+	header(class=`header ${modifier}`)
+		include ../components/header-nav.pug
+		include ../components/header-banner-attachment.pug

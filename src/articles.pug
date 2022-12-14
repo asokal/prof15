@@ -1,0 +1,23 @@
+extends layouts/default.pug
+include ./mixins/tabs.pug
+include ./mixins/tab.pug
+
+block header
+	include components/header-nav.pug
+
+block content
+	section.articles
+		.container
+			h1 Статьи
+			.tabs
+				ul.tabs__list
+					li.active
+						a(href='#') Обзоры брендов
+					li
+						a(href='#') Здоровье
+					li
+						a(href='#') Интересное о косметике
+					li
+						a(href='#') Медицинские препараты
+				._tab.tab.active
+					include components/articles-review.pug

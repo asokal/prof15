@@ -1,0 +1,24 @@
+section.cart
+	.container
+		h1 Корзина
+		.cart__wrap
+			.cart__products
+				include ../components/cart-product.pug
+				include ../components/cart-product.pug
+				include ../components/cart-product.pug
+			.cart__summary
+				.cart__summary-text
+					.cart__summary-line
+						span В корзине
+						b 3 товара
+					.cart__summary-line
+						span Цена без скидки
+						b 1 380 ₽
+					.cart__summary-line
+						span Скидка
+						b 10%
+					.cart__summary-line
+						span Итоговая цена
+						b 2 380 ₽
+				button.cart__summary-button
+					|Оформить заказ

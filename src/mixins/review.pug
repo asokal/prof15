@@ -1,0 +1,7 @@
+include review-person.pug
+mixin review(img, name, product)
+	.review
+		+reviewPerson(img, name, product)
+
+		.review__text
+			block

@@ -1,0 +1,39 @@
+.cabinet-form
+{
+	width: 900px;
+}
+
+.cabinet-form__title
+{
+	font-size: 18px;
+	line-height: 25px;
+	color: $cBlackLight;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.cabinet-form__form-group
+{
+	display: flex;
+	flex-direction: column;
+	width: 505px;
+	margin-bottom: 30px;
+}
+
+.cabinet-form__btn
+{
+	margin-left: auto;
+}
+
+@media (max-width: 991px)
+{
+	.cabinet-form__form-group
+	{
+		width: 100%;
+	}
+
+	.cabinet-form
+	{
+		width: 100%;
+	}
+}

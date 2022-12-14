@@ -1,0 +1,58 @@
+.order-form
+	include ../mixins/radio-group.pug
+	include ./order-message.pug
+
+	.order-form__radio-group
+		.order-form__title Тип плательщика
+
+		.order-form__radio-name
+			+radioGroup('payertype', 'individual', 'true', 'Физическое лицо')
+
+		.order-form__radio-name
+
+			+radioGroup('payertype', 'entity', 'false', 'Юридическое лицо')
+
+	.order-form__form-group
+		.order-form__title Покупатель
+
+		.order-form__form-group
+			label.g-label
+				span.g-label__name Email
+				input.g-input(type='email' name='mail' id='mail' placeholder='Введите ваш email')
+
+			label.g-label
+				span.g-label__name Имя
+				input.g-input(type='text' name='yourname' id='name' placeholder='Ваше имя')
+
+			label.g-label
+				span.g-label__name Телефон
+				input.g-input(type='tel' name="phonenumber" id='number' placeholder='Введите номер телефона')
+
+			label.g-label
+				span.g-label__name Адрес
+				input.g-input(type='text' name='adress' id='adress' placeholder='Введите адрес доставки')
+
+			label.g-label
+				span.g-label__name Комментарий к заказу
+				input.g-input(type='text' name='comment' id='comment' placeholder='Комментарий к заказу')
+
+	.order-form__radio-group
+		.order-form__title Доставка
+
+		.order-form__radio-name
+			+radioGroup('delivery', 'pickup', 'checked', 'Самовывоз - бесплатно')
+
+		.order-form__radio-name
+			+radioGroup('delivery', 'courier', 'false', 'Курьерская доставка(бесплатно от 1 500р) - 300р')
+
+		.order-form__radio-name
+			+radioGroup('delivery', 'rus', 'fale', 'Доставка по России - индивидуально')
+
+	.order-form__radio-group
+		.order-form__title Оплата
+
+		.order-form__radio-name
+			+radioGroup('payment', 'bank-card', 'checked', 'Онлайн-оплата банковской картой')
+
+		.order-form__radio-name
+			+radioGroup('payment', 'cash', 'false', 'По безналичному расчету')

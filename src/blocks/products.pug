@@ -1,0 +1,22 @@
+section.products
+	.container
+		.product-tabs
+			ul.product-tabs__list
+				li(class="active" onclick="o2.changeTab(this);")
+					span Новинки
+					hr
+				li(onclick="o2.changeTab(this);")
+					span Выбор клиентов
+					hr
+
+				li(onclick="o2.changeTab(this);")
+					span Лидеры продаж
+					hr
+
+			div(class="product-tab _tab active")
+				include ../components/product-slider.pug
+
+			div(class="product-tab _tab")
+				| kek
+			div(class="product-tab _tab")
+				| lol

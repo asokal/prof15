@@ -1,0 +1,52 @@
+.header
+{
+	&--big
+	{
+		min-height: 710px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-color: #FEF1F5;
+		position: relative;
+		margin-top: -79px;
+		background-image: url('../img/header-banner.jpg');
+
+		.header-banner-attachment
+		{
+			display: block;
+		}
+
+		.header-nav-search__input
+		{
+			background-color: #FFF9FB;
+			border: 0;
+		}
+	}
+}
+.telephone svg
+{
+	display: none;
+}
+@media (max-width: 1023px)
+{
+	.header--big
+	{
+		background-position-y: 50px;
+	}
+}
+@media (max-width: 767px)
+{
+	.telephone svg
+	{
+		display: block;
+	}
+	.telephone span
+	{
+		display: none;
+	}
+	.header--big
+	{
+		min-height: 500px;
+		background-size: 120% auto;
+	}
+}

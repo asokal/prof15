@@ -1,0 +1,4 @@
+mixin radioGroup(name, id, checked, text)
+	input(type='radio' name=`${name}` id=`${id}` checked=`${checked}`)
+	label(for=`${id}`)
+		| #{text}

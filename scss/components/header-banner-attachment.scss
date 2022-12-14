@@ -1,0 +1,53 @@
+.header-banner-attachment
+{
+	display: none;
+	width: 536px;
+	position: absolute;
+	right: 100px;
+	bottom: 24px;
+	text-align: right;
+}
+
+.header-banner-attachment__link
+{
+	color: $cBlackLight;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 7px;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: all .135s;
+
+	&:hover
+	{
+		border-bottom-color: $cBlack;
+	}
+
+	svg
+	{
+		margin-left: 7px;
+	}
+}
+
+.header-banner-attachment__descr
+{
+	color: $cGreyLight;
+	font-size: 14px;
+	line-height: 21px;
+}
+@media (max-width: 767px)
+{
+	.header-banner-attachment
+	{
+		width: auto;
+		right: 10px;
+	}
+}
+@media (max-width: 425px)
+{
+	.header-banner-attachment
+	{
+		text-align: center;
+		padding-left: 10px;
+	}
+}

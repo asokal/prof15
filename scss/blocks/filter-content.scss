@@ -1,0 +1,183 @@
+.filter-content
+{
+	.row
+	{
+		margin: 0;
+	}
+}
+
+h1.filter-content__title
+{
+	@include fMain(bold);
+	color: $cBlackLight;
+	font-size: 28px;
+	line-height: 42px;
+	margin-bottom: 4px;
+}
+
+p.filter-content__descr
+{
+	line-height: 24px;
+	color: $cGreyLight;
+	margin-bottom: 38px;
+}
+
+.filter-content__left
+{
+	flex-basis: 275px;
+	max-width: 275px;
+	margin-right: 40px;
+
+	.g-btn-grey
+	{
+		margin-bottom: 16px;
+	}
+}
+
+.filter-content__right
+{
+	flex-basis: 75%;
+	margin: 0 -10px;
+
+	.row
+	{
+		flex-wrap: wrap;
+	}
+
+	.product-item
+	{
+		flex-basis: calc(100% / 3);
+		max-width: calc(100% / 3);
+		padding: 0 10px;
+		margin-bottom: 47px;
+	}
+}
+
+.filter-content__show-more
+{
+	width: 100%;
+
+	.g-btn-transparent
+	{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.filter-content__toggle-wrap
+{
+	.g-btn-grey
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 1279px)
+{
+	.filter-content__right
+	{
+		.product-item
+		{
+			flex-basis: calc(100% / 2);
+			max-width: calc(110% / 2);
+		}
+	}
+
+}
+
+@media (max-width: 1023px)
+{
+	.filter-content
+	{
+		.row
+		{
+			flex-wrap: wrap;
+		}
+	}
+
+	.filter-content__right
+	{
+		flex-basis: unset;
+		max-width: unset;
+	}
+
+	.filter-content__left
+	{
+		flex-basis: 100%;
+		max-width: 100%;
+		margin-right: 0;
+
+		.g-btn-grey
+		{
+			margin-right: 10px;
+		}
+
+		.g-btn-transparent
+		{
+			position: relative;
+			bottom: -1px;
+		}
+	}
+
+	.filter-content__toggle-wrap
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+
+		.g-btn-grey
+		{
+			display: block;
+			height: 50px;
+			line-height: 50px;
+		}
+	}
+}
+
+@media (max-width: 767px)
+{
+	.filter-content__right
+	{
+		margin: 0;
+		.product-item
+		{
+			flex-basis: 100%;
+			max-width: 100%;
+			padding: 0;
+		}
+
+		.product-item
+		{
+			padding: 0 10px;
+		}
+	}
+
+	.filter-content__toggle-wrap
+	{
+		flex-direction: column;
+		margin-bottom: 20px;
+		align-items: flex-start;
+
+		.filter-content__title
+		{
+			font-size: 24px;
+		}
+
+		.g-btn-grey
+		{
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.filter-content__left
+	{
+		margin-bottom: 20px;
+
+		.g-btn-grey, .g-btn-transparent
+		{
+			width: 100%;
+		}
+	}
+}

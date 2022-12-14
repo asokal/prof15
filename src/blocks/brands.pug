@@ -1,0 +1,11 @@
+section.brands
+	.container
+		+textBlock('Бренды')
+			| Мы предлагаем Вашему вниманию продукцию известных марок, отлично зарекомендовавшие
+			br
+			| себя среди профессионалов и подходящие для ежедневного домашнего использования.
+
+		.brand-slider._brand-slider
+			- for (var i = 1; i < 7; i++)
+				.brand-item
+					img(src=`./img/brand${i}.png`, alt="")

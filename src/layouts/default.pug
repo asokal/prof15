@@ -1,0 +1,16 @@
+html
+	head
+		include ../blocks/pagehead.pug
+	body
+		include ../mixins/textblock.pug
+		include ../mixins/header.pug
+		block header
+			+header()
+		section.content
+			block content
+				| контент
+			include ../blocks/subscribe.pug
+
+		block footer
+			include ../blocks/footer.pug
+			include  ../../img/svg-symbols.svg

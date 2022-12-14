@@ -1,0 +1,42 @@
+.reviews
+{
+	padding: 70px 0 50px;
+	background-color: #F7F6F8;
+
+	.textblock
+	{
+		margin-bottom: 51px;
+	}
+
+	.row
+	{
+		margin-left: -17px;
+		margin-right: -17px;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.reviews
+	{
+		padding: 40px 0 60px;
+
+		.row
+		{
+			flex-wrap: wrap;
+		}
+	}
+}
+
+
+@media (max-width: 767px)
+{
+	.reviews
+	{
+		.row
+		{
+			margin: 0;
+		}
+	}
+}

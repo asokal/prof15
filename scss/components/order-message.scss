@@ -1,0 +1,20 @@
+.order-message
+{
+	width: 100%;
+	background: #F7F6F8;
+	border-radius: 2px;
+	padding: 15px;
+	font-size: 14px;
+	line-height: 19px;
+	color: $cGrey;
+	margin-bottom: 27px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a
+	{
+		text-decoration: underline;
+		color: $cBlackLight;
+	}
+}

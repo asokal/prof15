@@ -1,0 +1,16 @@
+.contacts__list
+{
+	color: $cGrey;
+	@include fMain();
+	font-size: 14px;
+	a
+	{
+		border-bottom: 1px solid transparent;
+		transition: .2s;
+		color: $cGrey;
+		&:hover
+		{
+			border-bottom-color: $cGrey;
+		}
+	}
+}

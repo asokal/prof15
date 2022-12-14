@@ -1,0 +1,28 @@
+.not-found
+{
+	margin: 90px auto;
+	border: solid 1px $cGreyLight;
+	text-align: center;
+	padding: 25px 0 25px 0;
+	max-width: 467px;
+	h1
+	{
+		font-weight: 800;
+		font-size: 24px;
+		color: $cBlackLight;
+		line-height: 33px;
+	}
+
+	a
+	{
+		color: $cGreyLight;
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 19px;
+
+		&:hover
+		{
+			color: $cGrey;
+		}
+	}
+}
